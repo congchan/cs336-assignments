@@ -1,0 +1,26 @@
+### 2.5 Experimenting with BPE Tokenizer Training
+➜  assignment1-basics git:(main) ✗ uv run pytest tests/test_train_bpe.py
+================================================================== test session starts ===================================================================
+platform darwin -- Python 3.12.9, pytest-8.3.5, pluggy-1.5.0
+rootdir: /Users/cong/Documents/cs336-assignments/assignment1-basics
+configfile: pyproject.toml
+plugins: jaxtyping-0.3.1
+collected 3 items
+
+tests/test_train_bpe.py::test_train_bpe_speed Got 1 chunks.
+Estimated 243 merges.
+Merging...
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 243/243 [00:00<00:00, 273.63it/s]
+PASSED
+tests/test_train_bpe.py::test_train_bpe Got 1 chunks.
+Estimated 243 merges.
+Merging...
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 243/243 [00:00<00:00, 272.79it/s]
+PASSED
+tests/test_train_bpe.py::test_train_bpe_special_tokens Got 10 chunks.
+Estimated 743 merges.
+Merging...
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 743/743 [00:04<00:00, 167.02it/s]
+PASSED
+
+=================================================================== 3 passed in 6.89s ====================================================================
