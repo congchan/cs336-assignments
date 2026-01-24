@@ -1,0 +1,69 @@
+================================================================================
+BPE Tokenizer Training Profile
+================================================================================
+
+Training time: 2.4918 hours
+Peak memory usage: 87.80 MB
+
+Top 20 Time-Consuming Functions (by cumulative time):
+================================================================================
+         6450205358 function calls (6450205074 primitive calls) in 7426.107 seconds
+
+   Ordered by: cumulative time
+   List reduced from 532 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+  762/759    6.041    0.008 12967.790   17.085 threading.py:637(wait)
+     9743 3595.447    0.369 7036.004    0.722 bpe.py:83(vanilla_merge)
+  774/751   45.467    0.059 6568.714    8.747 threading.py:323(wait)
+1831777585 1407.372    0.000 1407.372    0.000 {method 'append' of 'list' objects}
+4247365529 1273.693    0.000 1273.693    0.000 {built-in method builtins.len}
+     9743  862.757    0.089  862.757    0.089 bpe.py:62(_get_stats)
+3237/3019  134.748    0.042  421.383    0.140 {method 'acquire' of '_thread.lock' objects}
+       91    0.007    0.000   71.745    0.788 connection.py:1122(wait)
+    19498   30.286    0.002   52.897    0.003 {built-in method builtins.max}
+       91    0.001    0.000   45.292    0.498 selectors.py:402(select)
+       91   44.508    0.489   45.287    0.498 {method 'poll' of 'select.poll' objects}
+        1    0.000    0.000   45.000   45.000 _base.py:646(__exit__)
+        1    0.000    0.000   44.997   44.997 process.py:856(shutdown)
+      2/1    0.000    0.000   44.997   44.997 threading.py:1117(join)
+      2/1    0.000    0.000   44.997   44.997 threading.py:1155(_wait_for_tstate_lock)
+      2/1    0.000    0.000   44.997   44.997 threading.py:1018(_bootstrap)
+      2/1    0.000    0.000   44.997   44.997 threading.py:1058(_bootstrap_inner)
+        1    0.000    0.000   44.997   44.997 process.py:339(run)
+        1    0.000    0.000   44.997   44.997 process.py:568(join_executor_internals)
+        1    0.000    0.000   44.997   44.997 process.py:572(_join_executor_internals)
+
+
+
+
+Top 20 Time-Consuming Functions (by total time):
+================================================================================
+         6450205358 function calls (6450205074 primitive calls) in 7426.107 seconds
+
+   Ordered by: internal time
+   List reduced from 532 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     9743 3595.447    0.369 7036.004    0.722 bpe.py:83(vanilla_merge)
+1831777585 1407.372    0.000 1407.372    0.000 {method 'append' of 'list' objects}
+4247365529 1273.693    0.000 1273.693    0.000 {built-in method builtins.len}
+     9743  862.757    0.089  862.757    0.089 bpe.py:62(_get_stats)
+3237/3019  134.748    0.042  421.383    0.140 {method 'acquire' of '_thread.lock' objects}
+  774/751   45.467    0.059 6568.714    8.747 threading.py:323(wait)
+       91   44.508    0.489   45.287    0.498 {method 'poll' of 'select.poll' objects}
+    19498   30.286    0.002   52.897    0.003 {built-in method builtins.max}
+369121341   22.618    0.000   22.618    0.000 bpe.py:88(<lambda>)
+  762/759    6.041    0.008 12967.790   17.085 threading.py:637(wait)
+     9745    0.774    0.000    1.343    0.000 std.py:464(format_meter)
+    19504    0.233    0.000    0.315    0.000 {method 'format' of 'str' objects}
+       20    0.165    0.008    0.165    0.008 {built-in method _pickle.loads}
+     9747    0.162    0.000    0.162    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+      741    0.142    0.000   20.035    0.027 std.py:110(__enter__)
+     9743    0.124    0.000    2.352    0.000 std.py:1198(update)
+    19489    0.097    0.000    0.106    0.000 std.py:400(format_interval)
+        1    0.087    0.087   17.586   17.586 queues.py:214(_finalize_join)
+   516714    0.080    0.000    0.080    0.000 {built-in method unicodedata.east_asian_width}
+    58454    0.078    0.000    0.078    0.000 std.py:231(__call__)
+
+

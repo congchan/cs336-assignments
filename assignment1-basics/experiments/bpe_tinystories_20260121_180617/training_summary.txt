@@ -1,0 +1,16 @@
+================================================================================
+BPE Tokenizer Training Summary
+================================================================================
+
+Input file: data/TinyStoriesV2-GPT4-train.txt
+Target vocabulary size: 10000
+Special tokens: ['<|endoftext|>']
+Final vocabulary size: 10000
+Number of merges: 9743
+
+Training time: 2.4918 hours
+Training time: 149.51 minutes
+Training time: 8970.60 seconds
+
+Current memory usage: 4.62 MB
+Peak memory usage: 87.80 MB
